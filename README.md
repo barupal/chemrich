@@ -8,7 +8,8 @@ Classical pathway analyses provide a narrowed intepretation for metabolomics dat
 
 Alternatively, we can define data-driven and chemistry-driven compounds sets. Those sets can be used by a background database independent test such as the Kolmogorov–Smirnov test [KS-Test](https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test) to obtain the set-level significance. There could be several other ways to define chemical sets including chemical ontologies such as MeSH. 
 
-ChemRICH is an approach that defines chemical classes for metabolites and then runs a KS test to obtain the set-level p-values. It uses chemical similarity against the MeSH database to obtain chemical classes, but users can also provide their own chemical classes to run the KS-test.
+ChemRICH is an approach that defines chemical classes for metabolites and then runs a KS test to obtain the set-level p-values. It uses chemical similarity against the MeSH database to obtain chemical classes, but users can also provide their own chemical classes to run the KS-test. Underlying hypothesis is that "P-values under the null hypothesis are uniformly distributed between 0 and 1" (  
+ https://www.mv.helsinki.fi/home/mjxpirin/GWAS_course/material/GWAS2.html ) 
 
 A new version of ChemRICH has been developed in R (version 4.0).  
 
